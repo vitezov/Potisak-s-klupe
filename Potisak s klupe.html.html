@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Powerlifting</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .header {
+            grid-area: header;
+            background-color: #0000FF;
+            padding: 20px;
+            text-align: center;
+            font-size: 35px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-areas: 
+                'header header header header header header' 
+                'left middle middle middle middle right' 
+                'footer footer footer footer footer footer';
+        }
+
+        .left,
+        .middle,
+        .right {
+            padding: 10px;
+        }
+
+        .left {
+            grid-area: left;
+        }
+
+        .middle {
+            grid-area: middle;
+        }
+
+        .right {
+            grid-area: right;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: #f1f1f1;
+            padding: 10px;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            .grid-container  {
+                grid-template-areas: 
+                    'header header header header header header' 
+                    'left left left left left left' 
+                    'middle middle middle middle middle middle' 
+                    'right right right right right right' 
+                    'footer footer footer footer footer footer';
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="grid-container">
+    <div class="header">
+        Potisak s klupe
+    </div>
+  
+    <div class="left">
+		<div class="link-container">
+			<a href="" target="_blank">Powerlifting</a>
+			<a href="" target="_blank">Deadlift</a>
+			<a href="" target="_blank">Čučanj</a>
+		</div>
+    </div>
+  
+    <div class="middle">
+        <p>Potisak s klupe (bench press, eng.) je vježba snage za gornji dio tijela (prsne mišiće) koju definira potisak dvoručnog utega (šipke) prema gore u ležećem položaju.
+		Pravilna tehnika je da stopala obavezno moraju biti punom površinom na podu i sa strane klupe.
+		Donji dio leđa mora biti ”priljubljen“ uz klupu, iako se kod iskusnih vježbača može vidjeti kako su leđa, odnosno lumbalno–sakralni dio kralježnice blago uvinuti.</p>
+        <img src="https://i0.wp.com/www.muscleandfitness.com/wp-content/uploads/2020/07/WorldRecordBenchPress.jpg" alt="Deadlift" width="40%">
+		<img src="https://hips.hearstapps.com/hmg-prod/images/julius39-1583769028.png" alt="Deadlift" width="40%">
+    </div>
+  
+    <div class="right">
+        <p>Kao i kod čučnja postoje rekordi za opremljeni potisak s klupe i neopremljeni potisak s klupe. Svjetski rekord za opremljeni potisak s klupe je postavio Amerikanac Jimmy Kolb 29.7.2023 kada je digao 635 kg.
+		Svjetski rekord za neopremljeni potisak s klupe je postavio Julius Maddox 2023 godine. On je iznosio 355 kg.</p>
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE7nBnPAuKFzpBFNKr5rSwLQtVEr0Gb73Uyw&s.png" alt="haftor" width="100%">
+    </div> 
+  
+    <div class="footer">
+        © 2024 My Grid Layout Page. All rights reserved.
+    </div>
+</div>
+
+</body>
